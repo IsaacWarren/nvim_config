@@ -15,6 +15,11 @@ return {
 
                     -- Exclude some patterns from search
                     "--glob=!**/_generated_files/*",
+                        "--glob=!**/_generated_files/*",
+                        "--glob=!**/build/*",
+                        "--glob=!**.egg-info/*",
+                        "--glob=!**/venv/*",
+                        "--glob=!**/conda-lock*",
                 },
             },
             pickers = {
@@ -27,6 +32,10 @@ return {
                         "--files",
                         "--hidden",
                         "--glob=!**/_generated_files/*",
+                        "--glob=!**/build/*",
+                        "--glob=!**.egg-info/*",
+                        "--glob=!**/venv/*",
+                        "--glob=!**/conda-lock*",
                     },
                 },
             },
