@@ -9,3 +9,11 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.b.autoformat = false
   end,
 })
+
+-- Disable spellcheck in terminal
+vim.api.nvim_create_autocmd({ "TermOpen" }, {
+  pattern = { "*" },
+  callback = function()
+    vim.wo.spell = false
+  end,
+})
