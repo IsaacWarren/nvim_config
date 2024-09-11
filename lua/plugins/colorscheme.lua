@@ -1,6 +1,9 @@
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim",
+    opts = {
+            gruvbox_transparent_bg = true,
+        }},
 
   -- Configure LazyVim to load gruvbox
   {
