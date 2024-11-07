@@ -20,6 +20,8 @@ return {
                         "--glob=!**.egg-info/*",
                         "--glob=!**/venv/*",
                         "--glob=!**/conda-lock*",
+                        "--glob=!.pixi/**",
+                        "--glob=!.git/**",
                 },
             },
             pickers = {
@@ -36,6 +38,8 @@ return {
                         "--glob=!**.egg-info/*",
                         "--glob=!**/venv/*",
                         "--glob=!**/conda-lock*",
+                        "--glob=!.pixi/**",
+                        "--glob=!.git/**",
                     },
                 },
             },
