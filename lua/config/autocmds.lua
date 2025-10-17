@@ -49,7 +49,7 @@ vim.api.nvim_create_autocmd({ "SourcePost" }, {
             "Pmenu",
         }
         local extra_groups = { -- table: additional groups that should be cleared
-            --"NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo, breaks lazygit
+            "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo, breaks lazygit
             "FloatBorder",
             "NvimTreeWinSeparator",
             "NvimTreeNormal",
@@ -58,6 +58,9 @@ vim.api.nvim_create_autocmd({ "SourcePost" }, {
             "TelescopeNormal",
             "TelescopeBorder",
             "WhichKeyFloat",
+            "NeoTreeNormal",
+            "NeoTreeNormalNC",
+            "NeoTreeEndOfBuffer",
 
             -- TODO: programmatically add this
             "NotifyINFOBody",
