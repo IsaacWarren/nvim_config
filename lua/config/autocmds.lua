@@ -43,14 +43,10 @@ vim.api.nvim_create_autocmd({ "SourcePost" }, {
             "LineNr",
             "NonText",
             "SignColumn",
-            "CursorLine",
             "CursorLineNr",
             "EndOfBuffer",
             "NormalSB",
             "Pmenu",
-            "TabLineSel",
-            "WildMenu",
-            "Comment",
         }
         local extra_groups = { -- table: additional groups that should be cleared
             "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo, breaks lazygit
