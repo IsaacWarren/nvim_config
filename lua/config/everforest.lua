@@ -7,7 +7,8 @@ require("lazy").setup({
   config = function()
     require("everforest").setup({
       -- Your config here
-      transparent_background_level=2
+      transparent_background_level=2,
+      ui_contrast="high"
     })
   end,
 })
